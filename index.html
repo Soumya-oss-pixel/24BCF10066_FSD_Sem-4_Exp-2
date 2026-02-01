@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frontend Experiments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Experiment 1.2</h1>
+    <nav>
+        <button class="tab active" data-tab="exp1">1.2.1</button>
+        <button class="tab" data-tab="exp2">1.2.2</button>
+        <button class="tab" data-tab="exp3">1.2.3</button>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Experiment 1.2.1 -->
+    <section id="exp1" class="content active">
+        <h2>Experiment 1.2.1 – Live Character Counter</h2>
+        <p>Type in the box below:</p>
+        <textarea id="textInput" maxlength="150" placeholder="Start typing..."></textarea>
+        <div class="counter">
+            <span id="charCount">0</span> / 150 characters
+        </div>
+    </section>
+
+    <!-- Experiment 1.2.2 -->
+    <section id="exp2" class="content">
+        <h2>Experiment 1.2.2 – Dynamic Product Filter</h2>
+
+        <select id="filter">
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+        </select>
+
+        <div class="products">
+            <div class="card electronics">Laptop</div>
+            <div class="card clothing">T-Shirt</div>
+            <div class="card electronics">Headphones</div>
+            <div class="card clothing">Jacket</div>
+        </div>
+    </section>
+
+    <!-- Experiment 1.2.3 -->
+    <section id="exp3" class="content">
+        <h2>Experiment 1.2.3 – SVG Drawing Tool</h2>
+
+        <div class="tools">
+            <input type="color" id="colorPicker">
+            <button id="undo">Undo</button>
+        </div>
+
+        <svg id="canvas" viewBox="0 0 600 300"></svg>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
